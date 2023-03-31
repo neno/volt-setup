@@ -1,12 +1,12 @@
 import express from "express";
-const cors = require("cors");
+import cors from "cors";
 
 var counter = 0;
 
 const app = express();
 const port = 8080;
 
-app.use(cors);
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("Hello from bff");
