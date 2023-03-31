@@ -1,3 +1,9 @@
+import MyButton from 'ui/MyButton';
+
 export default function Root(props) {
-  return <section>{props.name} is mounted!</section>;
+  return (
+    <section>
+      <MyButton />
+    </section>
+  );
 }
